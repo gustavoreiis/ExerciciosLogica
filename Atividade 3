@@ -1,0 +1,97 @@
+Atividade 3
+
+Exercícios:
+1- Faça um algoritmo que leia o tempo de duração de um evento em uma fábrica expressa em segundos e mostre-o expresso em horas, minutos e segundos.
+2- Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:
+   infantil A = 5 - 7 anos
+   infantil B = 8-10 anos
+   juvenil A = 11-13 anos
+   juvenil B = 14-17 anos
+   adulto = maiores de 18 anos
+3- O cardápio de uma lanchonete é o seguinte:
+   Especificação    |    Código       |       Preço
+   Cachorro quente  |     100         |       15,00
+   Bauru simples    |     101         |       10,00
+   Bauru com ovo    |     102         |       12,00
+   Hambúrger        |     103         |       15,00
+   Cheeseburguer    |     104         |       16,00
+   
+   
+
+Exercícios 1:
+Algoritmo "tempo"
+
+Var
+   segundos, minutos, horas : real
+
+Inicio
+   escreva("Insira o tempo do evento em segundos: ")
+   leia(segundos)
+   minutos <- segundos / 60
+   horas <- segundos / 3600
+   escreval("Tempo em segundos: ", segundos:5:2)
+   escreval("Tempo em minutos: ", minutos:5:2)
+   escreva("Tempo em horas: ", horas:5:2)
+
+Fimalgoritmo
+
+
+
+Exercícios 2:
+Algoritmo "categorianadador"
+
+Var
+   idade : inteiro
+
+Inicio
+   escreva("Digite a idade: ")
+   leia(idade)
+   se (idade >= 5) e (idade <= 7) entao
+      escreva("Categoria: Infantil A.")
+   fimse
+   se (idade >= 8) e (idade <= 10) entao
+      escreva("Categoria: Infantil B.")
+   fimse
+   se (idade >= 11) e (idade <= 13) entao
+      escreva("Categoria: Juvenil A.")
+   fimse
+   se (idade >= 14) e (idade <= 17) entao
+      escreva("Categoria: Juvenil B.")
+   fimse
+   se (idade >= 18) entao
+      escreva("Categoria: Adulto.")
+   fimse
+
+Fimalgoritmo
+
+
+
+Exercício 3:
+Algoritmo "lanchonete"
+
+Var
+   nome : caractere
+   pedido, quantidade : inteiro
+   total : real
+Inicio
+   escreva("Nome: ")
+   leia(nome)
+   escreva("Informe o código do lanche: ")
+   leia(pedido)
+   escreva("Informe a quantidade de lanches: ")
+   leia(quantidade)
+   se (pedido = 100) ou (pedido = 103) entao
+      total <- 15 * quantidade
+   fimse
+   se (pedido = 101) entao
+      total <- 10 * quantidade
+   fimse
+   se (pedido = 102) entao
+      total <- 12 * quantidade
+   fimse
+   se (pedido = 104) entao
+      total <- 16 * quantidade
+   fimse
+   escreva("O valor total dos lanches é R$", total:5:2)
+
+Fimalgoritmo
