@@ -1,0 +1,69 @@
+Atividade 2
+
+Exercícios:
+1 - Crie um algoritmo que calcule o perímetro de um retângulo.
+2 - Crie um algoritmo que faça a conversão de temperatura em Fahrenheit para Celsius utilizando a seguinte fórmula: 
+    F = (C * 1.8) + 32, onde F é a representação em Fahrenheit e C representa a temperatura em Celsius.
+3- Crie um algoritmo que verifique se o número lido é positivo, negativo ou igual a zero e informe o usuário.
+
+
+
+Exercício 1:
+Algoritmo "perimetro"
+
+Var
+   base, altura, perimetro: inteiro
+
+Inicio
+   escreva ("Base do retângulo: ")
+   leia (base)
+   escreva ("Altura do retângulo: ")
+   leia(altura)
+   escreval ("")
+   perimetro <- 2 * (base + altura)
+   escreva ("O perímetro do retângulo é", perimetro)
+
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "temperatura"
+
+Var
+   f, c : real
+
+Inicio
+   escreva ("Informe a temperatura em Fahrenheit: ")
+   leia (f)
+   c <- (f - 32) / 1.8
+   escreva ("Aconversão da temperatura de", f, "°F para °C é igual a", c, "°C.")
+
+Fimalgoritmo
+
+
+
+Exercício 3:
+Algoritmo "positivonegativo"
+
+Var
+   x : inteiro
+
+Inicio
+   escreva("Digite um valor: ")
+   leia(x)
+   se (x = 0) entao
+      escreva("O valor inserido é igual a 0.")
+   fimse
+   se (x > 0) entao
+      escreva("O valor inserido é positivo.")
+   fimse
+   se (x < 0) entao
+      escreva("O valor inserido é negativo.")
+   fimse
+
+Fimalgoritmo
+
+
+
+
