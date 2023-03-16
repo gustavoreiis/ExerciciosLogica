@@ -1,0 +1,75 @@
+#Atividade 1
+Exercícios:
+1 - Receba dois valores e realize a multiplicação deles. Exiba o resultado final.
+2 - Receba três valores e verifique qual é o maior entre eles. Exiba o maior valor.
+3 - Receba o nome, idade e endereço de uma pessoa e informe em um único texto todas essas informações.
+
+
+
+Exercício 1:
+Algoritmo "multiplicação"
+
+Var
+   x, y : inteiro
+   
+Inicio
+   escreva("Digite o primeiro valor: ")
+   leia(x)
+   escreva("Digite o segundo valor: ")
+   leia(y)
+   escreva("A multiplicação entre", x, " e", y, " é:", x * y, ".")
+
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "maior"
+
+Var
+   x, y, z : inteiro
+   
+Inicio
+   escreva("Digite o primeiro valor: ")
+   leia(x)
+   escreva("Digite o segundo valor: ")
+   leia(y)
+   escreva("Digite o terceiro valor: ")
+   leia(z)
+   se (x > y) e (x > z) entao
+      escreva("O maior valor inserido é", x, ".")
+   fimse
+   se (y > x) e (y > z) entao
+      escreva("O maior valor inserido é", y, ".")
+   fimse
+   se (z > x) e (z > y) entao
+      escreva("O maior valor inserido é", z, ".")
+   fimse
+
+Fimalgoritmo
+
+
+
+Exercício 3:
+Algoritmo "informacoes"
+
+Var
+   nome, endereco : caracter
+   idade : inteiro
+   
+Inicio
+   escreva("Digite o seu nome: ")
+   leia(nome)
+   escreva("Digite sua idade: ")
+   leia(idade)
+   escreva("Digite o seu endereço: ")
+   leia(endereco)
+   escreva("Você se chama ", nome,", tem", idade, " e mora em ", endereco, ".")
+   
+   
+Fimalgoritmo
+
+      
+
+
+
