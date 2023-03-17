@@ -1,0 +1,68 @@
+Atividade 4
+
+Exercícios:
+1- Faça um algoritmo para receber um número qualquer e informar na tela se é par ou ímpar.
+2- Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condição de pagamento. Utilize os códigos da tabela a seguir para ler qual a condição de pagamento escolhida e efetuar o cálculo adequado.
+   Código Condição de pagamento 
+   1-  À vista em dinheiro ou cheque, recebe 10% de desconto 
+   2- À vista no cartão de crédito, recebe 15% de desconto 
+   3- Em duas vezes, preço normal de etiqueta sem juros 
+   4- Em três vezes, preço normal de etiqueta mais juros de 10%
+   
+Exercício 1:
+Algoritmo "par impar"
+
+Var
+   x, resto : inteiro
+
+Inicio
+   escreva("Valor: ")
+   leia(x)
+   resto <- x % 2
+   se (resto = 0) entao
+      escreva("O valor é par.")
+   fimse
+   se (resto = 1) entao
+      escreva("O valor é ímpar.")
+   fimse
+
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "loja"
+
+Var
+   preco: real
+   forma : inteiro
+
+Inicio
+   escreval("1 -  À vista em dinheiro ou cheque, recebe 10% de desconto")
+   escreval("2 - À vista no cartão de crédito, recebe 15% de desconto")
+   escreval("3 - Em duas vezes, preço normal de etiqueta sem juros")
+   escreval("4 - Em três vezes, preço normal de etiqueta mais juros de 10%")
+   escreva("Preço do produto: ")
+   leia(preco)
+   escreva("Forma de pagamento: ")
+   leia(forma)
+   se (forma >= 1) e (forma <= 4) entao
+      se (forma = 1) entao
+         escreval("O valor final é: R$", preco * 0.9)
+      senao
+           se (forma = 2) entao
+              escreval("O valor final é: R$", preco * 0.85)
+           senao
+                se (forma = 3) entao
+                   escreval("O valor final é: R$", preco)
+                senao
+                     se (forma = 4) entao
+                        escreval("O valor final é: R$", preco * 1.1)
+         fimse
+         fimse
+         fimse
+         fimse
+         senao
+              escreva("Opção de pagamento inválida")
+         fimse
+Fimalgoritmo
