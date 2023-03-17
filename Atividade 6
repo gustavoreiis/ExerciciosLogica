@@ -1,0 +1,79 @@
+Atividade 6
+
+Exercícios:
+1- Um posto está vendendo combustíveis com a seguinte tabela de descontos: 
+    - Até 20 litros, desconto de 3% por litro Álcool.
+    - Acima de 20 litros, desconto de 5% por litro.
+    - Até 20 litros, desconto de 4% por litro Gasolina.
+    - Acima de 20 litros, desconto de 6% por litro 
+    Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a  ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,00 e o preço do litro do álcool é R$ 4,50) 
+2- Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais novo com a mulher mais velha. 
+
+
+
+Exercício 1:
+Algoritmo "posto"
+
+Var
+   comb : caracter
+   litros : inteiro
+   valor : real
+   
+Inicio
+      escreva("Combustível: [A/G]")
+      leia(comb)
+      escreva("Litros: ")
+      leia(litros)
+      se (comb = "A") e (litros <= 20) entao
+         valor <- litros * (4.5 * 0.97)
+      fimse
+      se (comb = "A") e (litros > 20) entao
+         valor <- litros * (4.5 * 0.95)
+      fimse
+      se (comb = "G") e (litros <= 20) entao
+         valor <- litros * (6 * 0.96)
+      fimse
+      se (comb = "A") e (litros > 20) entao
+         valor <- litros * (6 * 0.94)
+      fimse
+      escreva(litros, " Litros de combustível. Valor final: R$", valor)
+      
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "idades"
+
+Var
+   hu, hd, mu, md, velho, novo, velha, nova, soma, produto: inteiro
+   
+Inicio
+   escreva("Idade homem 1: ")
+   leia(hu)
+   escreva("Idade homem 2: ")
+   leia(hd)
+   escreva("idade mulher 1: ")
+   leia(mu)
+   escreva("Idade mulher 2: ")
+   leia(md)
+   se (hu > hd) entao
+      velho <- hu
+      novo <- hd
+   senao
+      novo <- hu
+      velho <- hd
+   fimse
+   se (mu > md) entao
+      velha <- mu
+      nova <- md
+   senao
+      nova <- mu
+      velha <- md
+   fimse
+   soma <- velho + nova
+   produto <- novo * velha
+   escreval("A soma das idades do homem mais velho com a mulher mais nova é ", soma)
+   escreva("O produto das idades do homem mais novo com a mulher mais velha é ", produto)
+   
+Fimalgoritmo
