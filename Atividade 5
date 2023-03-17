@@ -1,0 +1,81 @@
+Atividade 5
+
+Exercícios:
+1- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. 
+2- Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos e nulos . Calcular a quantidade de votos válidos e escrever o percentual que cada um representa em relação ao total de eleitores. 
+3- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário. 
+4- O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.
+
+
+
+Exercícios 1:
+Algoritmo "idade"
+
+Var
+   anos, meses, dias : inteiro
+
+Inicio
+   escreva("Anos: ")
+   leia(anos)
+   escreva("Mêses: ")
+   leia(meses)
+   escreva("Dias: ")
+   leia(dias)
+   dias <- dias + (anos * 365) + (meses * 30)
+   escreva("Sua idade em dias é: ", dias)
+
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "eleicao"
+
+Var
+   total, brancos, nulos, validos : inteiro
+   
+Inicio
+   escreva("Informe a quantidade de votos da eleição: ")
+   leia(total)
+   escreval("Informe a quantidade de votos brancos: ")
+   leia(brancos)
+   escreval("Informe a quantidade de votos nulos: ")
+   leia(nulos)
+   validos <- total - nulos
+   escreval("O percentual de votos brancos foi de: ", (brancos/total) * 100, "%")
+   escreval("O percentual de votos nulos foi de: ", (nulos/total) * 100, "%")
+   escreval("O percentual de votos válidos foi de: ", (validos/total) * 100, "%")
+   
+Fimalgoritmo
+
+
+
+Exercício 3:
+Algoritmo "aumento"
+
+Var
+   salario, porcentagem, final : real
+
+Inicio
+   escreva("Salário: ")
+   leia(salario)
+   escreva("Porcentagem de alteração: ")
+   leia(porcentagem)
+   final <- salario + (salario * (porcentagem / 100))
+   escreva("Novo salário: R$", final)
+
+Fimalgoritmo
+
+Exercício 4:
+Algoritmo "carro"
+
+Var
+   custofabrica, custofinal : real
+   
+Inicio
+   escreva("Custo de fábrica: ")
+   leia(custofabrica)
+   custofinal <- custofabrica + (custofabrica * 0.28) + (custofabrica * 0.45)
+   escreva("O custo final do carro é: R$", custofinal)
+   
+Fimalgoritmo
