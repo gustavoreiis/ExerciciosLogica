@@ -1,0 +1,90 @@
+Atividade 7
+
+Exercícios:
+1- Faça um programa que troque o conteúdo de duas variáveis inteiras sem utilizar variáveis auxiliares.
+2- Faça um programa que leia dois valores numéricos inteiros e efetue a adição; se o resultado for maior que 10, imprima o primeiro valor. Caso contrário, imprima o segundo. 
+3- Faça um programa para determinar se um número inteiro A é divisível por um outro número inteiro B. Esses valores devem ser fornecidos pelo usuário.
+4- Faça um programa que leia um número e imprima a raiz quadrada do número caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja negativo.
+
+
+
+Exercício 1:
+Algoritmo "troca"
+
+Var
+   x, y : inteiro
+   
+Inicio
+   escreva("Valor 1: ")
+   leia(x)
+   escreva("Valor 2: ")
+   leia(y)
+   x <- x + y
+   y <- x - y
+   x <- x - y
+   escreval("Valor 1: ", x)
+   escreva("Valor 2: ", y)
+
+Fimalgoritmo
+
+
+
+Exercício 2:
+Algoritmo "maiormenor"
+
+Var
+   a, b, soma : inteiro
+
+Inicio
+   escreva("Valor 1: ")
+   leia(a)
+   escreva("Valor 2: ")
+   leia(b)
+   soma <- a + b
+   se (soma > 10) entao
+      escreva("O primeiro valor é ", a)
+   senao
+      escreva("O segundo valor é ", b)
+   fimse
+
+Fimalgoritmo
+
+
+
+Exercício 3:
+Algoritmo "divisivel"
+
+Var
+   a, b : inteiro
+   
+Inicio
+      escreva("Digite o primeiro valor: ")
+      leia(a)
+      escreva("Digite o segundo valor: ")
+      leia(b)
+      se (a % b) = 0 entao
+         escreva("O número", a, " é divisível por", b, ".")
+      senao
+         escreva("O número", a, " não é divisível por", b, ".")
+      fimse
+      
+Fimalgoritmo
+
+
+
+Exercício 4:
+Algoritmo "quadradoraiz"
+
+Var
+   x : inteiro
+   
+Inicio
+   escreva("Digite um valor: ")
+   leia(x)
+   se (x >= 0) entao
+      escreva("A raiz quadrada de", x, " é", x ^ 0.5, ".")
+   senao
+      escreva(x, " ao quadrado é", x ^ 2, ".")
+   fimse
+
+Fimalgoritmo
