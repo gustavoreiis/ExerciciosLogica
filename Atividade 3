@@ -15,6 +15,7 @@ Exercícios:
    Bauru com ovo    |     102         |       12,00
    Hambúrger        |     103         |       15,00
    Cheeseburguer    |     104         |       16,00
+   Escreva um algoritmo que leia o nome do cliente, o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item.
    
    
 
