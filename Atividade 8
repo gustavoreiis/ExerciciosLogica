@@ -1,0 +1,70 @@
+Atividade 8
+
+Exercício
+O cardápio de uma lanchonete é o seguinte:
+
+Especificação    |    Código   |     Preço
+Cachorro quente  |     100     |     15,00
+Bauru simples    |     101     |     10,00
+Bauru com ovo    |     102     |     12,00
+Hambúrger        |     103     |     15,00
+Cheeseburguer    |     104     |     16,00
+
+Escreva um algoritmo que leia o nome do cliente, o código do item pedido e a quantidade de lanches.  Garanta que o usuário informe um código de lanche válido. Após isso calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item.
+
+
+
+Algoritmo "lanchonete"
+
+Var
+   nome, novo, lanche: caractere
+   pedido, quantidade : inteiro
+   total, valortotal, valorlanche : real
+Inicio
+   escreva("Nome: ")
+   leia(nome)
+   escreval("Especificação    |   Código    |     Preço")
+   escreval("Cachorro quente  |     100     |     15,00")
+   escreval("Bauru simples    |     101     |     10,00")
+   escreval("Bauru com ovo    |     102     |     12,00")
+   escreval("Hambúrger        |     103     |     15,00")
+   escreval("Cheeseburguer    |     104     |     16,00")
+   enquanto (novo <> "N") faca
+      escreva("Informe o código do lanche: ")
+      leia(pedido)
+      enquanto (pedido < 100) ou (pedido > 104) faca
+         escreva("Código inválido! Informe o código do lanche: ")
+         leia(pedido)
+      fimenquanto
+      escreva("Informe a quantidade de lanches: ")
+      leia(quantidade)
+      se (pedido = 100) entao
+         valorlanche <- 15 * quantidade
+         lanche <- "Cachorro Quente"
+      fimse
+      se (pedido = 101) entao
+         valorlanche <- 10 * quantidade
+         lanche <- "Bauru Simples"
+      fimse
+      se (pedido = 102) entao
+         valorlanche <- 12 * quantidade
+         lanche <- "Bauru com ovo"
+      fimse
+      se (pedido = 103) entao
+         valorlanche <- 15 * quantidade
+         lanche <- "Hambúrguer"
+      fimse
+      se (pedido = 104) entao
+         valorlanche <- 16 * quantidade
+         lanche <- "Cheeseburguer"
+      fimse
+      escreval("O valor total de ", lanche, " é R$", valorlanche:5:2)
+      valortotal <- valortotal + valorlanche
+      escreval("O valor total é R$", valortotal:5:2)
+      escreval("Desejar fazer outro pedido? [S/N] ")
+      leia(novo)
+   fimenquanto
+   escreva("O valor final é R$", valortotal:5:2)
+Fimalgoritmo
+
+
