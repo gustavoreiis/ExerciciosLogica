@@ -1,0 +1,54 @@
+Atividade 9
+
+Exercícios
+1- Crie um algoritmo que simule várias compras até que o limite do cartão seja atingido. O usuário deverá informar o valor de limite do seu cartão e o preço de cada compra. O processo de compra também poderá ser finalizado se alguma condição seja satisfeita, além do limite do cartão.
+2- Crie um algoritmo que calcule a sequência Fibonacci por meio da fórmula: Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2), com Fibonacci(0) = 0 e Fibonacci(1) = 1.
+
+Exercício 1
+Algoritmo "compras"
+
+Var
+   limite, total, compra : real
+
+Inicio
+   escreva("Informe o limite do seu cartão: ")
+   leia(limite)
+   enquanto (limite > total) faca
+      escreva("informe o valor da compra: (Valor negativo para parar compras) ")
+      leia(compra)
+      total <- total + compra
+      se (compra < 0) entao
+         escreva("Compras encerradas.")
+         interrompa
+      senao
+           se (limite <= total) entao
+              escreva("Limite do cartão atingido.")
+           fimse
+      fimse
+   fimenquanto
+
+Fimalgoritmo
+
+
+
+Exercício 2
+Algoritmo "fibonacci"
+
+Var
+   n, a, b, c, i : inteiro
+   
+Inicio
+   escreva("Informe o número de termos da Sequência de Fibonacci: ")
+   leia(n)
+   a <- 0
+   b <- 1
+   escreval(a)
+   escreval(b)
+   para i <- 3 ate n faca
+        c <- a + b
+        escreval(c)
+        a <- b
+        b <- c
+   fimpara
+   
+Fimalgoritmo
